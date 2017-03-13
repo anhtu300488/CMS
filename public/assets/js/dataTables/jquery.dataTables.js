@@ -1251,7 +1251,7 @@
 						}
 						else if ( funcNotation )
 						{
-							// Function call
+							// Basic call
 							a[i] = a[i].replace(__reFn, '');
 							data = data[ a[i] ]();
 							continue;
@@ -1350,7 +1350,7 @@
 					}
 					else if ( funcNotation )
 					{
-						// Function call
+						// Basic call
 						a[i] = a[i].replace(__reFn, '');
 						data = data[ a[i] ]( val );
 					}
@@ -1367,7 +1367,7 @@
 				// Last item in the input - i.e, the actual set
 				if ( aLast.match(__reFn ) )
 				{
-					// Function call
+					// Basic call
 					data = data[ aLast.replace(__reFn, '') ]( val );
 				}
 				else
@@ -4234,7 +4234,7 @@
 	/**
 	 * Throttle the calls to a function. Arguments and context are maintained for
 	 * the throttled function
-	 *  @param {function} fn Function to be called
+	 *  @param {function} fn Basic to be called
 	 *  @param {int} [freq=200] call frequency in mS
 	 *  @returns {function} wrapped function
 	 *  @memberof DataTable#oApi
@@ -4678,7 +4678,7 @@
 	
 	
 	/**
-	 * Function to run on user sort request
+	 * Basic to run on user sort request
 	 *  @param {object} settings dataTables settings object
 	 *  @param {node} attachTo node to attach the handler to
 	 *  @param {int} colIdx column sorting index
@@ -5149,7 +5149,7 @@
 	 * an array store of callback functions that can then all be called together.
 	 *  @param {object} oSettings dataTables settings object
 	 *  @param {string} sStore Name of the array storage for the callbacks in oSettings
-	 *  @param {function} fn Function to be called back
+	 *  @param {function} fn Basic to be called back
 	 *  @param {string} sName Identifying name for the callback (i.e. a label)
 	 *  @memberof DataTable#oApi
 	 */
@@ -8876,7 +8876,7 @@
 		 * Throttle the calls to a function. Arguments and context are maintained
 		 * for the throttled function.
 		 *
-		 * @param {function} fn Function to be called
+		 * @param {function} fn Basic to be called
 		 * @param {integer} freq Call frequency in mS
 		 * @return {function} Wrapped function
 		 */
@@ -9321,7 +9321,7 @@
 		"fnCreatedCell": null,
 	
 		/**
-		 * Function to get data from a cell in a column. You should <b>never</b>
+		 * Basic to get data from a cell in a column. You should <b>never</b>
 		 * access data directly through _aData internally in DataTables - always use
 		 * the method attached to this property. It allows mData to function as
 		 * required. This function is automatically assigned by the column
@@ -9337,7 +9337,7 @@
 		"fnGetData": null,
 	
 		/**
-		 * Function to set data for a cell in the column. You should <b>never</b>
+		 * Basic to set data for a cell in the column. You should <b>never</b>
 		 * set the data directly to _aData internally in DataTables - always use
 		 * this method. It allows mData to function as required. This function
 		 * is automatically assigned by the column initialisation method
@@ -11924,7 +11924,7 @@
 		 *      comma-space separated list from the source array. If no characters
 		 *      are provided between the brackets, the original array source is
 		 *      returned.
-		 *    * `()` - Function notation. Adding `()` to the end of a parameter will
+		 *    * `()` - Basic notation. Adding `()` to the end of a parameter will
 		 *      execute a function of the name given. For example: `browser()` for a
 		 *      simple function on the data source, `browser.version()` for a
 		 *      function in a nested property or even `browser().version` to get an
@@ -12100,7 +12100,7 @@
 		 *      comma-space separated list from the source array. If no characters
 		 *      are provided between the brackets, the original array source is
 		 *      returned.
-		 *    * `()` - Function notation. Adding `()` to the end of a parameter will
+		 *    * `()` - Basic notation. Adding `()` to the end of a parameter will
 		 *      execute a function of the name given. For example: `browser()` for a
 		 *      simple function on the data source, `browser.version()` for a
 		 *      function in a nested property or even `browser().version` to get an
@@ -13165,7 +13165,7 @@
 		"oAjaxData": undefined,
 	
 		/**
-		 * Function to get the server-side data.
+		 * Basic to get the server-side data.
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
 		 *  @type function

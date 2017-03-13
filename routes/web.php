@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'Admin\HomeController@index');
+
+Route::get('logPayment', 'Admin\Basic\LogPaymentController@index');

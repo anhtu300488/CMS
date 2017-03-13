@@ -429,7 +429,7 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
         type: 'text',
         /**
         Url for submit, e.g. <code>'/post'</code>  
-        If function - it will be called instead of ajax. Function should return deferred object to run fail/done callbacks.
+        If function - it will be called instead of ajax. Basic should return deferred object to run fail/done callbacks.
 
         @property url 
         @type string|function
@@ -512,7 +512,7 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
         **/          
         send: 'auto', 
         /**
-        Function for client-side validation. If returns string - means validation not passed and string showed as error.
+        Basic for client-side validation. If returns string - means validation not passed and string showed as error.
         Since 1.5.1 you can modify submitted value by returning object from `validate`: 
         `{newValue: '...'}` or `{newValue: '...', msg: '...'}`
 
