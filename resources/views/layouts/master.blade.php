@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
-    <title>Dashboard - Ace Admin</title>
+    <title>@yield('title')</title>
 
     <meta name="description" content="overview &amp; stats" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -389,6 +389,11 @@
             else $(this).removeClass('dropup');
         });
 
+        window.prettyPrint && prettyPrint();
+        $('#id-check-horizontal').removeAttr('checked').on('click', function(){
+            $('#dt-list-1').toggleClass('dl-horizontal').prev().html(this.checked ? '&lt;dl class="dl-horizontal"&gt;' : '&lt;dl&gt;');
+        });
+
     })
 </script>
 
@@ -399,7 +404,7 @@
 <script type="text/javascript"> ace.vars['base'] = '..'; </script>
 <script src="{!! asset('assets/js/ace/elements.onpage-help.js') !!}"></script>
 <script src="{!! asset('assets/js/ace/ace.onpage-help.js') !!}"></script>
-<script src="{!! asset('docs/assets/js/rainbow.js') !!}"></script>
+{{--<script src="{!! asset('docs/assets/js/rainbow.js') !!}"></script>--}}
 <script src="{!! asset('docs/assets/js/language/generic.js') !!}"></script>
 <script src="{!! asset('docs/assets/js/language/html.js') !!}"></script>
 <script src="{!! asset('docs/assets/js/language/css.js') !!}"></script>

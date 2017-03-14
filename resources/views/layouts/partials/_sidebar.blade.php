@@ -38,8 +38,8 @@
     </div><!-- /.sidebar-shortcuts -->
 
     <ul class="nav nav-list">
-        <li class="active">
-            <a href="index.html">
+        <li {{ setActive('home') }}>
+            <a href="{{url('home')}}">
                 <i class="menu-icon fa fa-tachometer"></i>
                 <span class="menu-text"> Dashboard </span>
             </a>
@@ -47,7 +47,7 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li {{ setOpen('basic') }} >
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-desktop"></i>
                 <span class="menu-text">
@@ -60,8 +60,8 @@
             <b class="arrow"></b>
 
             <ul class="submenu">
-                <li class="">
-                    <a href="" class="dropdown-toggle">
+                <li {{ setActive('basic/purchaseMoneyLog') }} >
+                    <a href="{{url('basic/purchaseMoneyLog')}}">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Danh sách nạp thẻ
                     </a>
@@ -73,7 +73,6 @@
                         TOP người dùng nạp tiền
                     </a>
 
-                    <b class="arrow"></b>
                 </li>
 
                 <li class="">
@@ -82,7 +81,6 @@
                         Người dùng đăng ký
                     </a>
 
-                    <b class="arrow"></b>
                 </li>
 
                 <li class="">

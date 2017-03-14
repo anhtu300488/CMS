@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('title')
+    Dashboard
+@endsection
 @section('content')
     <div class="page-header">
         <h1>

@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'Admin\HomeController@index');
+Route::get('/home', ['as' => 'home', 'uses' => 'Admin\HomeController@index']);
 
-Route::get('logPayment', 'Admin\Basic\LogPaymentController@index');
+Route::get('/basic/logPayment', ['as' => 'basic.logPayment', 'uses' => 'Admin\Basic\LogPaymentController@index'] );
+
+Route::get('/basic/purchaseMoneyLog', ['as' => 'basic.purchaseMoneyLog', 'uses' => 'Admin\Basic\PurchaseMoneyLogController@index']);
