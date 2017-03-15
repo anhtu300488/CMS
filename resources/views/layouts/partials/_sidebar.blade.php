@@ -67,8 +67,8 @@
                     </a>
                 </li>
 
-                <li class="">
-                    <a href="typography.html">
+                <li {{ setActive('basic/topUser') }}>
+                    <a href="{{route('basic.topUser')}}">
                         <i class="menu-icon fa fa-caret-right"></i>
                         TOP người dùng nạp tiền
                     </a>
@@ -83,8 +83,8 @@
 
                 </li>
 
-                <li class="">
-                    <a href="buttons.html">
+                <li {{ setActive('basic/exchangeAssetRequest') }}>
+                    <a href="{{route('basic.exchangeAssetRequest')}}">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Danh sách đổi thẻ
                     </a>
@@ -101,10 +101,19 @@
                     <b class="arrow"></b>
                 </li>
 
-                <li class="">
-                    <a href="treeview.html">
+                <li {{ setActive('basic/kenHistory') }}>
+                    <a href="{{route('basic.kenHistory')}}">
                         <i class="menu-icon fa fa-caret-right"></i>
-                        Lịch sử Rub
+                        Lịch sử Ken
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li {{ setActive('basic/xuHistory') }}>
+                    <a href="{{route('basic.xuHistory')}}">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Lịch sử xu
                     </a>
 
                     <b class="arrow"></b>
@@ -231,7 +240,7 @@
                 </li>
 
                 <li class="">
-                    <a href="{{url('/tool/addMoney')}}">
+                    <a href="{{url('tool/addMoney')}}">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Cộng tiền cho người chơi
                     </a>

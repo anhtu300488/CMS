@@ -54,10 +54,11 @@ class AddMoneyController extends Controller
      */
     public function store(Request $request)
     {
-//        $this->validate($request, [
-//            'title' => 'required',
-//            'description' => 'required',
-//        ]);
+        $this->validate($request, [
+            'userId' => 'required|integer',
+            'addGold' => 'required|integer',
+            'addCash' => 'required|integer'
+        ]);
 
         $addMoney = new AddMoney;
 
@@ -70,6 +71,14 @@ class AddMoneyController extends Controller
         $addMoney->created_at = Carbon::now();
         $addMoney->updated_at = Carbon::now();
         $addMoney->save();
+
+//        $input = $request->all();
+//        $input['admin_id'] = Auth::user()->id;
+//        $input['status'] = 1;
+//        $input['created_at'] = Carbon::now();
+//        $input['updated_at'] = Carbon::now();
+//
+//        $user = AddMoney::create($input);
 
         return redirect()->route('tool.addMoney')
             ->with('success','Add money successfully');

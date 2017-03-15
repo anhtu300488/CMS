@@ -24,7 +24,7 @@
                     <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> Cộng ken </label>
 
                     <div class="col-sm-9">
-                        <input type="password" id="form-field-2" placeholder="Cộng ken" name="addGold" class="col-xs-10 col-sm-5" />
+                        <input type="text" id="form-field-2" placeholder="Cộng ken" name="addGold" class="col-xs-10 col-sm-5" value="0" />
                     </div>
                 </div>
 
@@ -34,7 +34,7 @@
                     <label class="col-sm-3 control-label no-padding-right" for="form-input-readonly"> Cộng xu </label>
 
                     <div class="col-sm-9">
-                        <input type="text" class="col-xs-10 col-sm-5" id="form-input-readonly" name="addCash" placeholder="Cộng xu" />
+                        <input type="text" class="col-xs-10 col-sm-5" id="form-input-readonly" name="addCash" placeholder="Cộng xu" value="0"/>
                     </div>
                 </div>
 
