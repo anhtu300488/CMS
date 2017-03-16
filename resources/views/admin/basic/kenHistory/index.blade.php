@@ -145,7 +145,7 @@
                         </tbody>
                     </table>
                 </div><!-- /.span -->
-                {{ $data->links() }}
+                {{ $data->appends($_GET)->links() }}
             </div><!-- /.row -->
         </div><!-- /.col -->
     </div><!-- /.row -->

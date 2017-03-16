@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin\Revenue;
 
+use App\ClientType;
+use App\Partner;
 use App\PurchaseMoneyLog;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -20,8 +22,18 @@ class RechargeTransactionController extends Controller
         $dateCharge = \Request::get('date_charge') ? explode(" - ", \Request::get('date_charge')) : null;
         $datePlayGame = \Request::get('date_play_game') ? explode(" - ", \Request::get('date_play_game')): null;
         $type = \Request::get('type');
-        $partner = \Request::get('partner_id');
-        $os = \Request::get('os_id');
+        $cp = \Request::get('partner');
+        $os = \Request::get('clientType');
+
+        $partner = Partner::pluck('partnerName', 'partnerId');
+
+        $partner->prepend('---Tất cả---', '');
+
+//        var_dump($partner);die;
+
+        $clientType = ClientType::pluck('name', 'clientId');
+
+        $clientType->prepend('---Tất cả---', '');
 
         $matchThese = [];
         if($type != ''){
@@ -66,6 +78,6 @@ class RechargeTransactionController extends Controller
 
         $data = $query->orderBy('purchase_money_log.userName')->paginate(10);
 
-        return view('admin.revenue.rechargeTransaction.index',compact('data'))->with('i', ($request->input('page', 1) - 1) * 10);
+        return view('admin.revenue.rechargeTransaction.index',compact('data', 'partner', 'clientType'))->with('i', ($request->input('page', 1) - 1) * 10);
     }
 }

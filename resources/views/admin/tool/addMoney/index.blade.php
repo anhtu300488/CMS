@@ -96,8 +96,7 @@
                         </tbody>
                     </table>
                 </div><!-- /.span -->
-                {{--@include('admin.pagination.default', ['paginator' => $data])--}}
-                {{ $data->links() }}
+                {{ $data->appends($_GET)->links() }}
             </div><!-- /.row -->
         </div><!-- /.col -->
     </div><!-- /.row -->

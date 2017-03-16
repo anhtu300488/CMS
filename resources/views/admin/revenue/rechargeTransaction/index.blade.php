@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Danh sách nạp thẻ
+    Chi tiết giao dịch nạp tiền
 @endsection
 @section('content')
     <div class="page-header">
@@ -40,13 +40,8 @@
 
                                 <div class="col-xs-4 col-sm-4">
                                     <label class="col-sm-4" for="form-field-select-1">Đối tác</label>
+                                    {!! Form::select('partner', $partner, null, ['class' => 'col-sm-8', 'id' => "form-field-select-1"]) !!}
 
-                                    <select class="col-sm-8" id="form-field-select-1" name="partner_id">
-                                        <option value="">---Tất cả---</option>
-                                        <option value="1" <?php if(request('payType') == 1) echo "selected='selected'"; ?> >Nạp thẻ</option>
-                                        <option value="2" <?php if(request('payType') == 2) echo "selected='selected'"; ?> >SMS</option>
-                                        <option value="3" <?php if(request('payType') == 3) echo "selected='selected'"; ?> >IAP</option>
-                                    </select>
                                 </div>
 
                             </div>
@@ -80,12 +75,7 @@
                                 <div class="col-xs-4 col-sm-4">
                                     <label class="col-sm-4" for="form-field-select-1">Hệ điều hành</label>
 
-                                    <select class="col-sm-8" id="form-field-select-1" name="os_id">
-                                        <option value="">---Tất cả---</option>
-                                        <option value="1" <?php if(request('payType') == 1) echo "selected='selected'"; ?> >Nạp thẻ</option>
-                                        <option value="2" <?php if(request('payType') == 2) echo "selected='selected'"; ?> >SMS</option>
-                                        <option value="3" <?php if(request('payType') == 3) echo "selected='selected'"; ?> >IAP</option>
-                                    </select>
+                                    {!! Form::select('clientType', $clientType, null, ['class' => 'col-sm-8', 'id' => "form-field-select-1"]) !!}
                                 </div>
 
                             </div>
@@ -95,9 +85,9 @@
 
                                     <select class="col-sm-8" id="form-field-select-1" name="type">
                                         <option value="">---Tất cả---</option>
-                                        <option value="1" <?php if(request('payType') == 1) echo "selected='selected'"; ?> >Nạp thẻ</option>
-                                        <option value="2" <?php if(request('payType') == 2) echo "selected='selected'"; ?> >SMS</option>
-                                        <option value="3" <?php if(request('payType') == 3) echo "selected='selected'"; ?> >IAP</option>
+                                        <option value="1" <?php if(request('type') == 1) echo "selected='selected'"; ?> >Thẻ cào</option>
+                                        <option value="2" <?php if(request('type') == 2) echo "selected='selected'"; ?> >SMS</option>
+                                        <option value="3" <?php if(request('type') == 3) echo "selected='selected'"; ?> >IAP</option>
                                     </select>
                                 </div>
                             </div>

@@ -131,7 +131,6 @@
                         </thead>
 
                         <tbody>
-                        <!--                        --><?php //var_dump($data); die;?>
                         @foreach($data as $key => $rs)
                         <tr>
                             <td>{{ ++$i }}</td>
@@ -147,7 +146,7 @@
                         </tbody>
                     </table>
                 </div><!-- /.span -->
-                {{ $data->links() }}
+                {{ $data->appends($_GET)->links() }}
             </div><!-- /.row -->
         </div><!-- /.col -->
     </div><!-- /.row -->

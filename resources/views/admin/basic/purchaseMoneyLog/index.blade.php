@@ -255,7 +255,6 @@
                         </thead>
 
                         <tbody>
-<!--                        --><?php //var_dump($data); die;?>
                         @foreach($data as $key => $rs)
                             <tr>
                                 <td>{{ ++$i }}</td>
@@ -276,8 +275,7 @@
                         </tbody>
                     </table>
                 </div><!-- /.span -->
-                {{--@include('admin.pagination.default', ['paginator' => $data])--}}
-                {{ $data->links() }}
+                {{ $data->appends($_GET)->links() }}
             </div><!-- /.row -->
         </div><!-- /.col -->
     </div><!-- /.row -->
