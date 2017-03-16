@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin\Basic;
 
-use App\purchaseMoneyLog;
+use App\PurchaseMoneyLog;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -19,7 +19,7 @@ class TopUserController extends Controller
         $fromDate = \Request::get('fromDate');
         $toDate = \Request::get('toDate');
 
-        $query = purchaseMoneyLog::query();
+        $query = PurchaseMoneyLog::query();
         if($userName != ''){
             $query->where('userName','LIKE','%'.$userName.'%');
         }

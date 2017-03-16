@@ -395,6 +395,341 @@
             </ul>
         </li>
 
+        <li class="">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-pencil-square-o"></i>
+                <span class="menu-text"> Doanh Thu </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li class="">
+                    <a href="form-elements.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Doanh thu theo ngày
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li {{ setActive('revenue/rechargeTransaction') }}>
+                    <a href="{{route('revenue.rechargeTransaction')}}">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Chi tiết giao dịch nạp tiền
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-wizard.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Tiền phế trong game
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="wysiwyg.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Lịch sử tiền chơi game
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Lịch sử nạp thẻ
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Doanh thu SMS
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Chi tiết MO SIM
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Chi tiết MO SMS
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Thống kê đổi thưởng
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Quản lý user online
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <li class="">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-pencil-square-o"></i>
+                <span class="menu-text"> Game </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li class="">
+                    <a href="form-elements.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-elements-2.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements 2
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-wizard.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wizard &amp; Validation
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="wysiwyg.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wysiwyg &amp; Markdown
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Dropzone File Upload
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <li class="">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-pencil-square-o"></i>
+                <span class="menu-text"> Tiền trong game </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li class="">
+                    <a href="form-elements.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-elements-2.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements 2
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-wizard.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wizard &amp; Validation
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="wysiwyg.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wysiwyg &amp; Markdown
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Dropzone File Upload
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <li class="">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-pencil-square-o"></i>
+                <span class="menu-text"> Người chơi game </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li class="">
+                    <a href="form-elements.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-elements-2.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements 2
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-wizard.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wizard &amp; Validation
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="wysiwyg.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wysiwyg &amp; Markdown
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Dropzone File Upload
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <li class="">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-pencil-square-o"></i>
+                <span class="menu-text"> Các phân hệ khác </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li class="">
+                    <a href="form-elements.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-elements-2.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements 2
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="form-wizard.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wizard &amp; Validation
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="wysiwyg.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wysiwyg &amp; Markdown
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li class="">
+                    <a href="dropzone.html">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Dropzone File Upload
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
     </ul><!-- /.nav-list -->
 
     <!-- #section:basics/sidebar.layout.minimize -->

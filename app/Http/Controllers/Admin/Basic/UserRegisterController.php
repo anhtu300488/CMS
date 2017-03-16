@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin\Basic;
 
-use App\PurchaseMoneyLog;
+use App\UserReg;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class PurchaseMoneyLogController extends Controller
+class UserRegisterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,27 +18,19 @@ class PurchaseMoneyLogController extends Controller
         $userName = \Request::get('userName');
         $fromDate = \Request::get('fromDate');
         $toDate = \Request::get('toDate');
-        $payType = \Request::get('payType');
-//        $cardType = \Request::get('cardType');
-//        $os = \Request::get('os');
-//
-        $matchThese = [];
-        if($payType != ''){
-            $matchThese['type'] = $payType;
-        }
 
-        $query = PurchaseMoneyLog::query();
+        $query = UserReg::query();
         if($userName != ''){
             $query->where('userName','LIKE','%'.$userName.'%');
         }
-        $query->where($matchThese);
+
         if($fromDate != '' && $toDate != ''){
             $start = date("Y-m-d",strtotime($fromDate));
             $end = date("Y-m-d",strtotime($toDate));
             $query->whereBetween('purchasedTime',[$start,$end]);
         }
-        $data = $query->orderBy('userName')->paginate(10);
+        $data = $query->orderBy('cashValue')->paginate(10);
 
-        return view('admin.basic.purchaseMoneyLog.index',compact('data'))->with('i', ($request->input('page', 1) - 1) * 10);
+        return view('admin.basic.topUser.index',compact('data'))->with('i', ($request->input('page', 1) - 1) * 10);
     }
 }
