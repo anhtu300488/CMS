@@ -87,7 +87,7 @@
         </div>
     </div><!-- /.page-header -->
 
-    <div class="row" style="border-bottom: 3px double #e5e5e5">
+    <div class="row">
         <div class="col-xs-12">
             <!-- PAGE CONTENT BEGINS -->
             <div class="center">
@@ -110,6 +110,7 @@
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div>
+    <hr />
     <div class="row">
         <div class="col-xs-12">
             <!-- PAGE CONTENT BEGINS -->
