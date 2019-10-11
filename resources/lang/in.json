@@ -1,0 +1,7 @@
+{
+  "Hi there!" : "नमस्ते!",
+  "How are you doing?" : "आप कैसे हैं?",
+  "This is basic example of how you use Laravel Localizations" : "यह मूल उदाहरण है कि आप लारवेल लोकलाइज़ेशन का उपयोग कैसे करते हैं",
+    "Login" : "यह",
+    "You are logged in admin page!" : "आप कैसे हैं!"
+}
